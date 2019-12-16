@@ -5,8 +5,9 @@ It extends Create React App with some of my personal preferences for starting a 
 
 ## Todo
 
-  - Add back feature flag to middleware
+  - Add feature flag to middleware
   - Make the default styles / themes nicer
+  - Update / Review README.md
 
 ## What's Included
 
