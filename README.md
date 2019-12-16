@@ -1,4 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my boilerplate and playground for React projects, based on [Create React App](https://github.com/facebook/create-react-app).
+It extends Create React App with some of my personal preferences for starting a React Project.
+
+**This is an often-changing starter project that varies with my preferences at any given time.**
+
+## Todo
+
+  - Add back feature flag to middleware
+  - Make the default styles / themes nicer
+
+## What's Included
+
+  - [React Router](https://reacttraining.com/react-router/) for routing within the application.
+  - [Redux](https://redux.js.org/) and [react-redux](https://react-redux.js.org/) for state management.
+  - [styled-components](https://www.styled-components.com/) for styling and theming. 
+  - [Axios](https://github.com/axios/axios) for a communication middleware.
+  - All the awesome things already included in Create React App.
+
+## Project Structure
+
+The base of the project has the **index.js**, the root component **App** and a **store.js** file, which creates the store for redux.
+
+  - **Actions** is where actions are defined. Includes *api.js* which exports all actions related to external service requests.
+  - **Components** is where all the components for the app will be. I use a folder for each, containing an *index.js* and a *styles.js* for, respectively, the component and the styles.
+  - **Reducers** is where the reducers for the app will be defined. Includes a single baseReducer that responds to the API middleware success and error actions, acting on the app's state.
+  - **Services** includes an API middleware. This middleware is used on the creation of the redux store and handles all API requests, later dispatching a success or error action.
+  - **Utils** contains a *defaults.js* file on which constants such as URLs or API Keys can be stored, as well as the *styles.global.js*, where global styles can be defined for the app.
+
+## What's Missing
+
+Right now I don't have a starter piece of code for implementing tests. Be sure to check [Create React App's documentation on the subject](https://create-react-app.dev/docs/running-tests).
 
 ## Available Scripts
 
@@ -26,43 +56,3 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
