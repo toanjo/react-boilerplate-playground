@@ -6,8 +6,10 @@ It extends Create React App with some of my personal preferences for starting a 
 ## Todo
 
   - Add feature flag to middleware
+  - Add a loader component
   - Make the default styles / themes nicer
   - Update / Review README.md
+  - Consider adding useMemo
 
 ## What's Included
 
