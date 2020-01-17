@@ -10,6 +10,7 @@ It extends Create React App with some of my personal preferences for starting a 
   - Make the default styles / themes nicer
   - Update / Review README.md
   - Consider adding useMemo
+  - Add framer-motion animations
 
 ## What's Included
 
